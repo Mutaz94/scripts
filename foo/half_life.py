@@ -5,6 +5,20 @@ import sys
 def half_life(CL, Vc, Q, Vp):
     """
     Function to calculate \alpha and \beta half-lives
+
+    Arguments:
+    CL  : Drug clearance (L/hr) 
+    Vc  : Central volume of distribution (L) 
+    Q   : Intracompartmental clearance (L/hr)
+    Vp  : Peripheral volume of distribution (L) 
+    
+    Output:
+
+    Output is a dict value with beta half-life and alpha half-life 
+
+    Example:
+
+    >>> half_life.half_life(CL=5, Vc=30, Q=35, Vp=50)
     """
 
     k12 = Q/Vc
